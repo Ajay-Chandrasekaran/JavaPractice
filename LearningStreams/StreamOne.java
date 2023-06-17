@@ -1,4 +1,4 @@
-package LearningStreams;
+package learningstreams;
 
 import java.util.ArrayList;
 import java.util.List;

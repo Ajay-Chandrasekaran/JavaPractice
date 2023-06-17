@@ -1,4 +1,4 @@
-package LearningStreams;
+package learningstreams;
 
 import java.util.Arrays;
 import java.util.function.BinaryOperator;

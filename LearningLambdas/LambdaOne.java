@@ -1,4 +1,4 @@
-package LearningLambdas;
+package learninglambdas;
 // lambda 1
 
 import java.io.File;

@@ -1,4 +1,4 @@
-package Concurrency;
+package concurrency;
 
 public class Concurrency1 {
     public static void main(String[] args) {
@@ -7,7 +7,7 @@ public class Concurrency1 {
             
             @Override
             public void run() {
-
+                System.out.format("%s", "String");
             }
         };
 

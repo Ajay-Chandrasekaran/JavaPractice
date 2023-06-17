@@ -1,6 +1,6 @@
-package LearningInterfaces;
+package learninginterfaces;
 
-import LearningInterfaces.Interface1;
+import learninginterfaces.Interface1;
 
 class Solution implements Interface1 {
 

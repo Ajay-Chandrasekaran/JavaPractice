@@ -1,4 +1,4 @@
-package LearningLambdas;
+package learninglambdas;
 
 import java.util.Arrays;
 import java.util.Collections;

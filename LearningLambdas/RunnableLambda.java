@@ -1,4 +1,4 @@
-package LearningLambdas;
+package learninglambdas;
 
 public class RunnableLambda {
     public static void main(String[] args) throws InterruptedException {
