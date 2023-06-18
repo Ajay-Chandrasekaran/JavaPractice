@@ -13,7 +13,7 @@ public class ConcurrencyInterrupt {
             };
 
             for (int i=0; i<messages.length; i++) {
-                System.out.format("Message from: %s \n Message: %s\n----",
+                System.out.format("Message from: %s \n Message: %s\n----\n",
                     Thread.currentThread().getName(),
                     messages[i]
                 );
@@ -21,7 +21,8 @@ public class ConcurrencyInterrupt {
                 try {
                     Thread.sleep(4000);
                 } catch (InterruptedException e) {
-                    System.out.format("%s", "Ok! TERMINATED");
+                    System.out.format("%s\n", "Ok! TERMINATED");
+                    return;
                 }
             }
         }
@@ -30,7 +31,10 @@ public class ConcurrencyInterrupt {
     public static void main(String[] args) throws InterruptedException{
         Thread t = new Thread(new Sleeper());
         t.setName("Sleeper");
+        t.start();
+
         System.out.println("Waiting 6 seconds");
+        Thread.sleep(6000);
         System.out.println("Done waiting.... Interrupting");
         if (t.isAlive()) {
             t.interrupt();
